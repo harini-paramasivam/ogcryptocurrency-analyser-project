@@ -4,6 +4,36 @@ import pandas as pd
 from utils.data_fetcher import get_supported_coins, get_market_data
 import traceback
 
+# ---- Force Dark Mode ----
+st.markdown("""
+    <style>
+        .stApp {
+            background-color: #0E1117 !important;
+            color: #FAFAFA !important;
+        }
+        .css-1d391kg, .css-1v0mbdj, .css-1c7y2kd, .css-1lcbmhc {
+            background-color: #262730 !important;
+            color: #FAFAFA !important;
+        }
+        .stSidebar, .css-6qob1r {
+            background-color: #16171c !important;
+        }
+        .stButton>button {
+            background-color: #262730 !important;
+            color: #FAFAFA !important;
+        }
+        .stDataFrame, .stTable {
+            background-color: #0E1117 !important;
+            color: #FAFAFA !important;
+        }
+        /* Optional: style markdown text and headers */
+        h1, h2, h3, h4, h5, h6, p, label, .markdown-text-container {
+            color: #FAFAFA !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
+# ...existing code...
+
 # ----------------------------
 # Streamlit Page Configuration
 # ----------------------------
