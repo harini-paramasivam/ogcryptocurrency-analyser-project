@@ -1,9 +1,7 @@
 [server]
 enableXsrfProtection = false
 headless = true
-port = 8051
 enableCORS = false
-
 [theme]
 base = "dark"
 primaryColor = "#0366d6"
